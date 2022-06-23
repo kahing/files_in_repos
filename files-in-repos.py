@@ -77,8 +77,8 @@ sys.path.append(os.path.abspath('/Workspace/Repos/<username>/supplemental_files'
 #    return a * b
 
 # Then, execute this cell.
-from sample import rectangle
-rectangle(5, 4)
+#from sample import rectangle
+#rectangle(5, 4)
 
 # COMMAND ----------
 
