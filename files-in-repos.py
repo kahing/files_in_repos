@@ -36,6 +36,15 @@ cube_root(8)
 
 # COMMAND ----------
 
+def cube_root_udf(x):
+  from utils.sample2 import cube_root
+  return cube_root(x)
+
+print(sc.parallelize((8,)).map(cube_root_udf).collect())
+
+
+# COMMAND ----------
+
 # MAGIC %md To import modules from other repositories, add them to the Python path.  
 # MAGIC For example, if you have a repo named `supplemental_files` with a Python module `lib.py`, you can import it as shown in the next cell.
 

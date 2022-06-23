@@ -1,2 +1,4 @@
 def cube_root(n):
-  print("The cube root of", n, "is", n**(1.0/3))
+  val = n**(1.0/3)
+  print("The cube root of", n, "is", val)
+  return val
